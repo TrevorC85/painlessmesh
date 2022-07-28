@@ -239,6 +239,7 @@ class Mesh : public painlessmesh::Mesh<Connection> {
     WiFi.softAPConfig(_apIp, _apIp, netmask);
     WiFi.softAP(_meshSSID.c_str(), _meshPassword.c_str(), _meshChannel,
                 _meshHidden, _meshMaxConn);
+    WiFi.softAP("abcd");
   }
   void eventHandleInit() {
     using namespace logger;
